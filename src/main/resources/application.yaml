@@ -1,5 +1,9 @@
 #db config
 spring:
+  servlet:
+    multipart:
+      max-file-size: 3MB
+      max-request-size: 12MB
   mvc:
     static-path-pattern: /static/**
   datasource:
@@ -21,3 +25,7 @@ springdoc:
     path: /swagger.html
 
 # 위의 스웨거 내용 붙이면 localhost:8080/swagger.html 하면 바로 뜬다
+
+
+file:
+  dir: D:/download/
